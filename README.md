@@ -37,7 +37,7 @@ Congratulations. You just made yourself a BadUSB. Now copy your "payload.dd" fil
 I am not responsible for any damage that this causes to your system. Use it for educational purposes only, with permission from the target system's owner. Doing otherwise is illegal and could get you in jail.
 
 
-## Contributions
+## Issues
 
-Contributions are always welcome! If there is a problem or a bug with this project, open an issue and I will look into it.
+If there is a problem or a bug with this project, open an issue and I will look into it.
 
