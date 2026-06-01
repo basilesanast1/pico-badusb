@@ -1,7 +1,7 @@
 
 # Pico BadUSB
 
-A BadUSB based on the Raspberry Pi Pico
+A BadUSB flash drive based on the Raspberry Pi Pico
 
 ## Authors
 
