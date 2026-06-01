@@ -8,7 +8,7 @@ A BadUSB flash drive based on the Raspberry Pi Pico
 - [@basilesanast1](https://www.github.com/basilesanast1)
 
 
-## About the project
+## About this project
 
 This is a simple BadUSB engine for the Raspberry Pi Pico using CircuitPython. It reads raw DuckyScript files and executes them without the need to convert them to `.bin` files, thus making the setup process much easier. It supports the official Raspberry Pi Pico and any other compatible boards. Raspberry Pi W/2/2W is not currently supported. DuckyScript v1.0 works best.
 
