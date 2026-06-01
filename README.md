@@ -23,7 +23,6 @@ Installing this engine on your Raspberry Pi Pico is very easy. All the files nee
 4. [Thonny](https://thonny.org/)
 5. A 3D-Printed case for your Raspberry Pi Pico (optional)
 
-====================================================
 Download the code as a ".zip" file on your computer and de-compress it. Next, connect your Raspberry Pi Pico to your computer. Drag and drop
 `adafruit-circuitpython-raspberry_pi_pico-en_US-10.2.1.uf2`
 on the Pico's storage. It will automatically reboot and show up as CIRCUITPY.
