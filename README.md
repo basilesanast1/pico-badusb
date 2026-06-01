@@ -10,7 +10,7 @@ A BadUSB based on the Raspberry Pi Pico
 
 ## About the project
 
-This is a simple BadUSB engine for the Raspberry Pi Pico using CircuitPython. It reads raw DuckyScript files and executes them without the need to convert them to ".bin" files, thus making the setup process much easier. It supports the official Raspberry Pi Pico and any other compatible boards. Raspberry Pi W/2/2W is not currently supported. DuckyScript v1.0 works best.
+This is a simple BadUSB engine for the Raspberry Pi Pico using CircuitPython. It reads raw DuckyScript files and executes them without the need to convert them to `.bin` files, thus making the setup process much easier. It supports the official Raspberry Pi Pico and any other compatible boards. Raspberry Pi W/2/2W is not currently supported. DuckyScript v1.0 works best.
 
 
 ## Installation
@@ -23,9 +23,8 @@ Installing this engine on your Raspberry Pi Pico is very easy. All the files nee
 4. [Thonny](https://thonny.org/)
 5. A 3D-Printed case for your Raspberry Pi Pico (optional)
 
-Download the code as a ".zip" file on your computer and de-compress it. Next, connect your Raspberry Pi Pico to your computer. Drag and drop
-`adafruit-circuitpython-raspberry_pi_pico-en_US-10.2.1.uf2`
-on the Pico's storage. It will automatically reboot and show up as CIRCUITPY.
+Download the code as a `.zip` file on your computer and de-compress it. Next, connect your Raspberry Pi Pico to your computer. Drag and drop
+`adafruit-circuitpython-raspberry_pi_pico-en_US-10.2.1.uf2` on the Pico's storage. It will automatically reboot and show up as CIRCUITPY.
 
 Next, copy all the files from the `lib` folder of the de-compressed folder and place them in the `lib` folder of your Pico. If the folder does not exist, create it.
 
