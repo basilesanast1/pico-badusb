@@ -8,7 +8,7 @@ A BadUSB flash drive based on the Raspberry Pi Pico
 - [@basilesanast1](https://www.github.com/basilesanast1)
 
 
-## CHANGELOG
+## Changelog
 
 - Added support for the Raspberry Pi Pico 2W (02/06/2026)
 - Cleaned up `code.py`, `engine.py`, `boot.py` and `pins.py` (02/06/2026)
@@ -47,8 +47,3 @@ I am not responsible for any damage that this causes to your system. Use it for 
 ## Issues
 
 If there is a problem or a bug with this project, open an issue and I will look into it.
-
-## Future support for the Raspberry Pi Pico 2W
-
-I am waiting on a new unit to test this on. I will update the repository with extra code for the Pico 2W.
-
