@@ -12,6 +12,7 @@ A BadUSB flash drive based on the Raspberry Pi Pico
 
 - Added support for the Raspberry Pi Pico 2W (02/06/2026)
 - Cleaned up `code.py`, `engine.py`, `boot.py` and `pins.py` (02/06/2026)
+- Added a way to reset your Pico in case you want to get rid of the code (02/06/2026)
 
 
 ## About this project
@@ -40,6 +41,13 @@ Lastly, copy `boot.py`, `code.py`, `pins.py`, and `engine.py` from the de-compre
 Congratulations. You just made yourself a BadUSB. Now copy your `payload.dd` file on the root folder of your Pico and after it is done, disconnect it from your computer immediatelly, or else the script ypu copied will run.
 
 [Hak5 Payload Library](https://github.com/hak5/usbrubberducky-payloads/)
+
+
+## How to reset your Pico
+
+Connect your Pico to your computer while holding the `BOOTSEL` button. Drag and drop `RP-008273-DS-3-flash_nuke.uf2` to the Pico's storage. It will automatically reboot and return your Pico into a clean like-new state.
+
+
 ## Disclaimer
 I am not responsible for any damage that this causes to your system. Use it for educational purposes only, with permission from the target system's owner. Doing otherwise is illegal and could get you in jail.
 
