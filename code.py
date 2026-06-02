@@ -1,45 +1,61 @@
 import time
 import board
-import pwmio
 import digitalio
 import os
 
-from engine import run_script, get_programming_status
+from engine import run_script, get_programming_status, kbd
 
+# ----------------------------
+# BOOT DELAY (USB settle time)
+# ----------------------------
 time.sleep(2)
 
-# LED setup
-if board.board_id.startswith("raspberry_pi_pico"):
-    led = pwmio.PWMOut(board.LED, frequency=5000)
-else:
-    led = digitalio.DigitalInOut(board.LED)
-    led.switch_to_output()
+# ----------------------------
+# LED SETUP (SAFE FOR PICO W / 2W)
+# ----------------------------
+led = digitalio.DigitalInOut(board.LED)
+led.switch_to_output()
 
 def blink():
     for _ in range(3):
-        try:
-            if hasattr(led, "duty_cycle"):
-                led.duty_cycle = 20000
-                time.sleep(0.2)
-                led.duty_cycle = 0
-            else:
-                led.value = True
-                time.sleep(0.2)
-                led.value = False
-        except:
-            pass
+        led.value = True
+        time.sleep(0.2)
+        led.value = False
+        time.sleep(0.2)
 
+# ----------------------------
+# MAIN
+# ----------------------------
 def main():
     print("System booting...")
 
     blink()
 
     print("Checking programming status...")
+
     if get_programming_status():
         print("Programming mode enabled")
         return
 
-    if "payload.dd" in os.listdir("/"):
+    # ----------------------------
+    # SAFE HID RESET
+    # ----------------------------
+    try:
+        kbd.release_all()
+    except:
+        pass
+
+    time.sleep(1.5)
+
+    # ----------------------------
+    # RUN PAYLOAD
+    # ----------------------------
+    try:
+        files = os.listdir("/")
+    except:
+        files = []
+
+    if "payload.dd" in files:
         print("Running payload.dd")
         run_script("payload.dd")
     else:
