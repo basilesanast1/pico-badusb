@@ -47,3 +47,7 @@ I am not responsible for any damage that this causes to your system. Use it for 
 ## Issues
 
 If there is a problem or a bug with this project, open an issue and I will look into it.
+
+## Future Updates
+
+I am expecting to have a web server for the Raspberry Pi Pico 2W working soon. Also multiple payload mode is planned.
