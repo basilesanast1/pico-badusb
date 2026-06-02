@@ -1,33 +1,22 @@
+import time
 import board
 import digitalio
 import storage
-import os
+
+time.sleep(0.1)  # stabilise GPIO at boot
 
 # ----------------------------
-# OPTIONAL: hardware switch (GP15)
+# GP15 SWITCH
 # ----------------------------
-# LOW (GND) = disable USB storage (advanced mode)
-# HIGH / floating = USB enabled
-
 no_storage_pin = digitalio.DigitalInOut(board.GP15)
 no_storage_pin.switch_to_input(pull=digitalio.Pull.UP)
 
-no_storage = not no_storage_pin.value  # True if grounded
+no_storage = not no_storage_pin.value
 
 # ----------------------------
-# SAFE DEFAULT BEHAVIOR
+# USB STORAGE CONTROL
 # ----------------------------
-# Always keep USB enabled unless GP15 explicitly requests disable
-
 if no_storage:
-    print("GP15 active -> Disabling USB drive")
     storage.disable_usb_drive()
 else:
-    print("USB drive enabled")
-
-# ----------------------------
-# OPTIONAL SAFETY OVERRIDE
-# ----------------------------
-# If you ever get locked out, comment EVERYTHING above
-# and leave only:
-# print("USB enabled")
+    storage.enable_usb_drive()
