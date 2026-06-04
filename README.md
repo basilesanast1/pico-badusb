@@ -40,7 +40,7 @@ Lastly, copy `boot.py`, `code.py`, `pins.py`, and `engine.py` from the de-compre
 
 Congratulations. You just made yourself a BadUSB. Now copy your `payload.dd` file on the root folder of your Pico and after it is done, disconnect it from your computer immediatelly, or else the script ypu copied will run.
 
-[Hak5 Payload Library](https://github.com/hak5/usbrubberducky-payloads/)
+[Hak5 Payload Library](https://github.com/hak5/usbrubberducky-payloads/tree/master/payloads/library/)
 
 
 ## How to reset your Pico
