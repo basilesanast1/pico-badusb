@@ -24,7 +24,7 @@ This is a simple BadUSB engine for the Raspberry Pi Pico and the Raspberry Pi Pi
 
 Installing this engine on your Raspberry Pi Pico is very easy. All the files needed are in this repository. You will need:
 
-1. CircuitPython 10.2.1 (.uf2 file is on the repository)
+1. CircuitPython 10.2.1 (.uf2 file is in the repository)
 2. Raspberry Pi Pico board (any official or knockoff board will do)
 3. USB data cable (Micro-USB or Type-C, depends on your board)
 4. [Thonny](https://thonny.org/)
